@@ -1,5 +1,5 @@
 ---> set the Role
- USE ROLE SYSADMIN ;
+ USE ROLE ACCOUNTADMIN ;
  
 ---> create the import_wh warehouse
  CREATE OR REPLACE WAREHOUSE IMPORT_WH      
@@ -30,9 +30,6 @@
   INITIALLY_SUSPENDED = TRUE
   MAX_CLUSTER_COUNT = 5;
    
----> set the Role
- USE ROLE SYSADMIN ;  
-  
 ---> create the staging Database
 CREATE DATABASE STAGING;
 
